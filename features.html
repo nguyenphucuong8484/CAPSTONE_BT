@@ -524,60 +524,72 @@
     </div>
 </section>
 
-<footer class="footer-custom py-5 bg-dark text-white">
+<footer class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <a class="text-white fw-bold fs-4 text-decoration-none" href="#">Solid</a>
-                <p class="text-muted mt-2">The complete starter template for your next SaaS project.</p>
-                <p class="text-muted">Email: hello@solid.com</p>
+        <div class="row pb-4 mb-4 border-bottom">
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-cube text-primary fs-3 me-2"></i> 
+                    <h5 class="fw-bold mb-0">Solid</h5>
+                </div>
+                <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                
+                <p class="mt-4 mb-0 text-muted small fw-bold text-uppercase">Contact</p>
+                <p class="fw-bold fs-5">hello@solid.com</p>
             </div>
             
-            <div class="col-6 col-lg-2 mb-4">
-                <h6 class="fw-bold text-white">Quick Links</h6>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
                 <ul class="list-unstyled">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="/index.html" class="text-decoration-none text-muted d-block py-1">Home</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Product</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Pricing</a></li>
                 </ul>
             </div>
-            
-            <div class="col-6 col-lg-2 mb-4">
-                <h6 class="fw-bold text-white">Support</h6>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">Support</h6>
                 <ul class="list-unstyled">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Press media</a></li>
-                    <li><a href="#">Our Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Company</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Press media</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Our Blog</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted d-block py-1">Contact Us</a></li>
                 </ul>
             </div>
-            
-            <div class="col-lg-4 mb-4">
-                <h6 class="fw-bold text-white">Newsletter</h6>
-                <p class="text-muted">Subscribe to receive future updates</p>
-                <form class="d-flex">
-                    <input type="email" class="form-control me-2" placeholder="Email address">
-                    <button type="submit" class="btn btn-primary-custom"><i class="fas fa-arrow-right"></i></button>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">Newsletter</h6>
+                <p class="text-muted small">Subscribe to receive future updates</p>
+                <form id="newsletter-form" class="d-flex border rounded-pill p-1 bg-white">
+                    <input type="email" class="form-control border-0 bg-transparent ps-3" id="email-address" placeholder="Email address" required>
+                    <button type="submit" class="btn btn-primary rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+                        <i class="fas fa-angle-right"></i> </button>
                 </form>
             </div>
         </div>
         
-        <hr class="text-white-50 my-4">
-        
-        <div class="row align-items-center">
-            <div class="col-md-6 text-muted small">
-                <a href="#" class="text-muted me-3">Privacy Policy</a>
-                <a href="#" class="text-muted me-3">Support</a>
-                <span class="d-block d-md-inline-block">&copy; 2025 Solid. All rights reserved.</span>
+        <div class="row align-items-center small text-muted">
+            <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                <a href="#" class="text-decoration-none text-muted me-3">English</a>
+                <a href="#" class="text-decoration-none text-muted me-3">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-muted">Support</a>
             </div>
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0">
+                <p class="mb-0 me-4">© 2025 Solid. All rights reserved</p>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-behance"></i></a>
             </div>
         </div>
+
     </div>
+    <a href="#" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 me-3 mb-3 p-3" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+        <i class="fas fa-angle-up"></i>
+    </a>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

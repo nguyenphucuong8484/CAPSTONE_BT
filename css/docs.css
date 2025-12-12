@@ -1,0 +1,185 @@
+/* Custom CSS: styles.css */
+
+/* Định nghĩa Biến CSS: Màu sắc và Độ Bo Tròn */
+:root {
+    --solid-blue: #3758F9; /* Màu xanh dương chủ đạo */
+    --solid-blue-dark: #2d47c4; /* Màu hover */
+    --solid-radius: 8px; /* Độ bo tròn tiêu chuẩn cho nút và input */
+    --solid-radius-sm: 6px; /* Độ bo tròn nhỏ */
+    --solid-bg-light: #f9faff; /* Nền xanh nhạt cho active state */
+    font-family: sans-serif;
+}
+
+/* --- Buttons (Nút Bấm: Màu Sắc và Bo Tròn) --- */
+
+/* Nút Primary (Màu xanh) */
+.solid-btn-primary {
+    background-color: var(--solid-blue);
+    border-color: var(--solid-blue);
+    color: white;
+    border-radius: var(--solid-radius); /* Áp dụng bo tròn */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(55, 88, 249, 0.2); /* Bóng đổ nhẹ */
+    font-weight: 600;
+}
+
+.solid-btn-primary:hover {
+    background-color: var(--solid-blue-dark);
+    border-color: var(--solid-blue-dark);
+    color: white;
+    transform: translateY(-2px); /* Hiệu ứng nhấc rõ ràng hơn */
+    box-shadow: 0 6px 12px rgba(55, 88, 249, 0.3); /* Tăng bóng đổ khi hover */
+}
+.solid-btn-primary:active {
+    background-color: var(--solid-blue-dark) !important;
+    border-color: var(--solid-blue-dark) !important;
+}
+
+/* Nút Outline (Sign In) */
+.solid-btn-outline {
+    color: #495057;
+    border-color: #ced4da;
+    border-radius: var(--solid-radius); /* Áp dụng bo tròn */
+    transition: all 0.2s ease;
+}
+.solid-btn-outline:hover {
+    color: var(--solid-blue);
+    border-color: var(--solid-blue);
+    background-color: white;
+}
+
+/* --- Forms & Inputs (Bo Tròn và Border Mỏng) --- */
+
+.solid-input {
+    border-radius: var(--solid-radius); /* Bo tròn input */
+    padding: 12px 15px;
+    border: 1px solid #dee2e6; /* Border mỏng và sáng hơn */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Thay đổi màu và shadow khi focus */
+.solid-input:focus {
+    border-color: var(--solid-blue);
+    box-shadow: 0 0 0 0.25rem rgba(55, 88, 249, 0.15); /* Shadow nhẹ nhàng */
+    background-color: white;
+}
+
+/* Checkbox (Form đồng ý) */
+.solid-checkbox {
+    border-radius: 4px; /* Bo tròn nhỏ hơn */
+}
+.solid-checkbox:checked {
+    background-color: var(--solid-blue);
+    border-color: var(--solid-blue);
+}
+
+/* --- Docs Sidebar (Active State Tinh Tế) --- */
+.solid-sidebar-nav .doc-link {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    color: #495057;
+    text-decoration: none;
+    border-radius: var(--solid-radius-sm); 
+    transition: all 0.2s ease;
+}
+.solid-sidebar-nav .doc-link:hover {
+    background-color: #f8f9fa;
+    color: var(--solid-blue);
+}
+.solid-sidebar-nav .doc-link.active {
+    background-color: var(--solid-bg-light); 
+    color: var(--solid-blue);
+    font-weight: 600;
+    /* Loại bỏ gạch chân, thay bằng nền xanh nhạt */
+    border-left: none; 
+}
+
+/* --- Utilities & Typography --- */
+.solid-text-primary {
+    color: var(--solid-blue) !important;
+}
+.solid-text-primary:hover {
+    color: var(--solid-blue-dark) !important;
+}
+
+/* Kích hoạt HOVER cho Dropdown trên màn hình lớn (Desktop) */
+@media (min-width: 992px) {
+    .solid-navbar .dropdown:hover .solid-dropdown-menu {
+        display: block; /* Hiển thị menu */
+        margin-top: 0; /* Đảm bảo menu dính sát vào navbar */
+        opacity: 1; /* Đảm bảo độ mờ (opacity) là 1 */
+        visibility: visible; /* Đảm bảo menu hiển thị */
+    }
+}
+
+/* --- Forms & Inputs (Bo Tròn, Border Mỏng, Focus Màu Xanh) --- */
+.solid-input {
+    border-radius: var(--solid-radius);
+    padding: 12px 15px;
+    border: 1px solid #dee2e6; /* Border mỏng */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solid-input:focus {
+    border-color: var(--solid-blue);
+    box-shadow: 0 0 0 0.25rem rgba(55, 88, 249, 0.15); /* Shadow màu xanh nhạt */
+    background-color: white;
+}
+
+/* Checkbox */
+.solid-checkbox:checked {
+    background-color: var(--solid-blue);
+    border-color: var(--solid-blue);
+}
+
+/* --- Contact Info --- */
+/* Đảm bảo khoảng cách giữa các khối thông tin */
+.solid-contact-info .solid-info-block {
+    /* Khoảng cách 2rem (32px) được mô phỏng bằng mb-5 trong HTML */
+}
+
+/* --- Bổ sung CSS cho Footer Hoàn Chỉnh --- */
+
+/* Màu chữ đậm trong footer */
+.solid-text-dark {
+    color: #343a40 !important; /* Màu đen/xám đậm */
+}
+
+/* Links Footer */
+.solid-footer-links li a {
+    color: #6c757d; /* Màu xám */
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 2.2; /* Tăng khoảng cách dòng */
+    transition: color 0.2s ease;
+}
+
+.solid-footer-links li a:hover {
+    color: var(--solid-blue); /* Màu xanh khi hover */
+}
+
+/* Newsletter Input Group (Đảm bảo bo tròn chỉ ở bên trái input) */
+.solid-newsletter-input .form-control {
+    border-radius: var(--solid-radius) 0 0 var(--solid-radius) !important;
+    border-right: none !important;
+}
+
+.solid-newsletter-input .solid-newsletter-btn {
+    border-radius: 0 var(--solid-radius) var(--solid-radius) 0 !important;
+    padding: 0 1rem;
+    height: 38px; /* Giúp khớp chiều cao với input-sm */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Social Icons */
+.solid-social-icon {
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.solid-social-icon:hover {
+    color: var(--solid-blue) !important;
+}
