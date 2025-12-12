@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Solid Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand h3 mb-0 text-dark" href="#">Solid</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docs.html">Docs</a> <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu solid-dropdown-menu" aria-labelledby="navbarDropdownPages">
+                            <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="/docs.html">Docs</a></li>
+                            <li><a class="dropdown-item" href="/support.html">Support</a></li>
+                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                        </ul>
+                    </li></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container py-5">
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?code,technology" class="card-img-top" alt="Exploring MERN Stack">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Exploring MERN Stack: Powering Modern Web...</h5>
+                        <p class="card-text text-muted small">In the world of web development, staying ahead of the curve is crucial. One technology stack that...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 1"></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?ui,design" class="card-img-top" alt="Best UI components">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Best UI components for modern website...</h5>
+                        <p class="card-text text-muted small">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 2"></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?ux,mobile" class="card-img-top" alt="The Power of UI/UX">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Power of UI/UX: Elevating Digital Ex...</h5>
+                        <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crasse consequat laoreet...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 3"></a>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?programming,desk" class="card-img-top" alt="Improve Coding Speed">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">How to quickly improve your coding spee...</h5>
+                        <p class="card-text text-muted small">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 4"></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?server,network" class="card-img-top" alt="MERN stack go-to choice">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The MERN stack has become a go-to choice...</h5>
+                        <p class="card-text text-muted small">In the world of web development, staying ahead of the curve is crucial...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 5"></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?startup,office" class="card-img-top" alt="The Rise of SaaS Startups">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Rise of SaaS Startups: Revolutionizi...</h5>
+                        <p class="card-text text-muted small">In today's digital age, startups are constantly pushing the boundaries...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 6"></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm custom-card">
+                    <div class="card-img-container">
+                        <img src="https://source.unsplash.com/400x250/?minimal,abstract" class="card-img-top" alt="UI UX Design">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX design allows companies establi...</h5>
+                        <p class="card-text text-muted small">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...</p>
+                    </div>
+                    <a href="#" class="stretched-link" aria-label="Đọc bài viết 7"></a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <footer class="bg-white border-top py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-dark mb-3">Solid</h5>
+                    <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-dark fw-bold mb-0">info@solid.com</p>
+                    <p class="text-dark">© 2025 T.Solid</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-decoration-none text-muted d-block py-1">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Product</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Company</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Press media</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Our Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted d-block py-1">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted small">Subscribe to receive future updates</p>
+                    <form id="newsletter-form" class="d-flex">
+                        <div class="flex-grow-1 me-2">
+                            <input type="email" class="form-control" id="email-address" placeholder="Email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    <div id="email-error-message" class="mt-2" style="display: none;">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row border-top pt-4 mt-4 align-items-center">
+                <div class="col-md-6 text-md-start text-center">
+                    <p class="mb-0 text-muted small">© 2025 Solid. All rights reserved. <a href="#" class="text-decoration-none text-muted">Privacy Policy</a> | <a href="#" class="text-decoration-none text-muted">Support</a></p>
+                </div>
+                <div class="col-md-6 text-md-end text-center mt-3 mt-md-0">
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-dark mx-2"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary rounded-circle" title="Về đầu trang" style="display: none;">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/index.css"></script> 
+</body>
+</html>
